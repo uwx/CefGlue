@@ -35,7 +35,11 @@ namespace Xilium.CefGlue
         IsRight           = 1 << 11,
         AltGrDown         = 1 << 12,
         IsRepeat          = 1 << 13,
-        ScrollingDelta    = 1 << 14,
+
+        /// <summary>
+        /// Renamed from ScrollingDelta to match CEF API.
+        /// </summary>
+        PrecisionScrollingDelta = 1 << 14,
         ScrollByPage      = 1 << 15,
     }
 }

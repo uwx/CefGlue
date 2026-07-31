@@ -192,6 +192,18 @@ namespace Xilium.CefGlue
         /// </summary>
         Layout_3_1_Back,
 
+        /// <summary>
+        /// Front L, Front R, Front C, LFE, Side L, Side R,
+        /// Top Front L, Top Front R, Top Back L, Top Back R
+        /// </summary>
+        Layout_5_1_4,
+
+        /// <summary>
+        /// Front L, Front R, Front C, LFE, Back L, Back R, Side L, Side R,
+        /// Top Front L, Top Front R, Top Back L, Top Back R
+        /// </summary>
+        Layout_7_1_4,
+
         NumValues,
     }
 }

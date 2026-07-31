@@ -35,6 +35,11 @@ namespace Xilium.CefGlue
         /// </summary>
         GpuDeadOnArrival,
 
+        /// <summary>
+        /// A bad process type was specified to the child process launcher.
+        /// </summary>
+        BadProcessType = 6,
+
         // The following values should be kept in sync with Chromium's
         // chrome::ResultCode type. Unused chrome values are excluded.
 
@@ -92,7 +97,22 @@ namespace Xilium.CefGlue
         /// </summary>
         SystemResourceExhausted = 37,
 
-        ChromeLast = 38,
+        /// <summary>
+        /// The browser process exited early due to auto-de-elevation.
+        /// </summary>
+        NormalExitAutoDeElevated = 38,
+
+        /// <summary>
+        /// The process was terminated by another process due to a commit failure.
+        /// </summary>
+        TerminatedByOtherProcessOnCommitFailure = 39,
+
+        /// <summary>
+        /// An invalid isolated browser process type was specified.
+        /// </summary>
+        InvalidIsolatedBrowserProcess = 40,
+
+        ChromeLast = 40,
 
         // The following values should be kept in sync with Chromium's
         // sandbox::TerminationCodes type.

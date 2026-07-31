@@ -46,6 +46,72 @@ namespace Xilium.CefGlue
         OptimizationGuide,
         CollaborationMessaging,
         ChangePassword,
+
+        /// <summary>
+        /// Lens overlay homework (API 13800+).
+        /// </summary>
+        LensOverlayHomework,
+
+        /// <summary>
+        /// AI mode (API 14000+).
+        /// </summary>
+        AiMode,
+
+        /// <summary>
+        /// Reading mode (API 14400+).
+        /// </summary>
+        ReadingMode,
+
+        /// <summary>
+        /// Contextual side panel (API 14400+).
+        /// </summary>
+        ContextualSidePanel,
+
+        /// <summary>
+        /// JS optimizations (API 14400+).
+        /// </summary>
+        JsOptimizations,
+
+        /// <summary>
+        /// Record replay (API 14700+).
+        /// </summary>
+        RecordReplay,
+
+        /// <summary>
+        /// Indigo (API 14700+).
+        /// </summary>
+        Indigo,
+
+        /// <summary>
+        /// Federation (API 14800+).
+        /// </summary>
+        Federation,
+
+        /// <summary>
+        /// Glic (API 14800+).
+        /// </summary>
+        Glic,
+
+        /// <summary>
+        /// Anchored contextual cue (API 14900+).
+        /// </summary>
+        AnchoredContextualCue,
+
+        /// <summary>
+        /// WebAuthn ambient sign-in (API 14900+).
+        /// </summary>
+        WebAuthnAmbientSignin,
+
+        /// <summary>
+        /// Autofill payment (API 15000+).
+        /// </summary>
+        AutofillPayment,
+
+        /// <summary>
+        /// Multistep filter (API 15000+).
+        /// </summary>
+        MultistepFilter,
+
         NumValues,
     }
 }

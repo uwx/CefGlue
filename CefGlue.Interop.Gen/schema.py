@@ -186,6 +186,9 @@ c2cs_enumtypes = {
     'cef_channel_layout_t': 'CefChannelLayout',
     'cef_text_input_mode_t': 'CefTextInputMode',
     'cef_task_info_t': 'CefTaskInfo',
+    'cef_component_update_error_t': 'CefComponentUpdateError',
+    'cef_component_update_priority_t': 'CefComponentUpdatePriority',
+    'cef_component_state_t': 'CefComponentState',
  }
 
 c2cs_structtypes = { }

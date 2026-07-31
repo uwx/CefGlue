@@ -46,7 +46,10 @@ namespace Xilium.CefGlue
         ProtectedMediaIdentifier,
         AppBanner,
         SiteEngagement,
-        DurableStorage,
+        /// <summary>
+        /// Renamed to PersistentStorage in M146.
+        /// </summary>
+        PersistentStorage,
         UsbChooserData,
         BluetoothGuard,
         BackgroundSync,
@@ -464,6 +467,27 @@ namespace Xilium.CefGlue
 
         /// Content settings for access to the Controlled Frame API.
         ControlledFrame,
+
+        /// <summary>
+        /// Local network access permission (API 14500+).
+        /// </summary>
+        LocalNetwork,
+
+        /// <summary>
+        /// Loopback network access permission (API 14500+).
+        /// </summary>
+        LoopbackNetwork,
+
+        /// <summary>
+        /// Whether a web app is allowed to install sub apps without prompting
+        /// (API 15000+).
+        /// </summary>
+        SubAppsWithoutPrompts,
+
+        /// <summary>
+        /// Inline cue menu (API 15100+).
+        /// </summary>
+        InlineCueMenu,
 
         NumValues,
     }

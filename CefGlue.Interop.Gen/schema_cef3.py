@@ -1,5 +1,5 @@
 #
-# TODO: 
+# TODO:
 # Copyright (C) CefGlue Project
 #
 
@@ -188,9 +188,15 @@ classdef = {
 
     # 126
     'CefUnresponsiveProcessCallback': { 'role': ROLE_PROXY },
-    
+
     # 134
     'CefPreferenceObserver': { 'role': ROLE_HANDLER },
     'CefSettingObserver': { 'role': ROLE_HANDLER },
     'CefTaskManager': { 'role': ROLE_PROXY },
+
+    # 146
+    'CefComponentUpdateCallback': { 'role': ROLE_HANDLER },
+    'CefComponent': { 'role': ROLE_PROXY },
+    'CefComponentUpdater': { 'role': ROLE_PROXY },
+    'CefV8BackingStore': { 'role': ROLE_PROXY }
 }

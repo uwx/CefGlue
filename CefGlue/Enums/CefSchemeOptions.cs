@@ -4,10 +4,13 @@
 //
 namespace Xilium.CefGlue
 {
+    using System;
+
     /// <summary>
     /// Configuration options for registering a custom scheme.
     /// These values are used when calling AddCustomScheme.
     /// </summary>
+    [Flags]
     public enum CefSchemeOptions
     {
         None = 0,

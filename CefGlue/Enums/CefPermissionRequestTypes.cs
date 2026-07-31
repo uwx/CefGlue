@@ -40,5 +40,25 @@ namespace Xilium.CefGlue
         WebAppInstallation = 1 << 22,
         WindowManagement = 1 << 23,
         FileSystemAccess = 1 << 24,
+
+        /// <summary>
+        /// Deprecated in M150. Use LocalNetwork instead.
+        /// </summary>
+        LocalNetworkAccessDeprecated = 1 << 25,
+
+        /// <summary>
+        /// Local network access permission (API 14500+).
+        /// </summary>
+        LocalNetwork = 1 << 26,
+
+        /// <summary>
+        /// Loopback network access permission (API 14500+).
+        /// </summary>
+        LoopbackNetwork = 1 << 27,
+
+        /// <summary>
+        /// Generic Sensor API permission (API 14700+).
+        /// </summary>
+        Sensors = 1 << 28,
     }
 }

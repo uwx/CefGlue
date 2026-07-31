@@ -27,8 +27,10 @@ namespace Xilium.CefGlue
         Extension,
         /// A browser plugin guest process.
         Guest,
-        /// A plugin process.
-        Plugin,
+        /// <summary>
+        /// A plugin process. Deprecated since API 14000.
+        /// </summary>
+        PluginDeprecated,
         /// A sandbox helper process
         SandboxHelper,
         /// A dedicated worker running on the renderer process.
