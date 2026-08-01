@@ -11,6 +11,7 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <PublishCommonConfig>Configuration=$(Configuration);Platform=$(Platform);TargetFramework=$(TargetFramework);IsPublishing=True;PublishTrimmed=True;SelfContained=True;RuntimeIdentifier=</PublishCommonConfig>
     <IsEditbinEnabled>True</IsEditbinEnabled>
+    <CETCompat>false</CETCompat>
   </PropertyGroup>
 
   <ItemGroup>

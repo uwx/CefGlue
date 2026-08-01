@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     <Import Project="..\CefGlue.Packages.props" />
-    
+
     <PropertyGroup>
         <TargetFramework>$(DotnetVersion)</TargetFramework>
         <AssemblyName>Xilium.CefGlue.Common</AssemblyName>
@@ -39,35 +39,5 @@
             <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
             <IncludeAssets>CefGlue.dll</IncludeAssets>
         </ProjectReference>
-
-        <!-- Forces BrowserProcess build before CopyProjectReferencesToPackage target run -->
-        <ProjectReference Include="..\CefGlue.BrowserProcess\CefGlue.BrowserProcess.csproj">
-            <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-            <PrivateAssets>all</PrivateAssets>
-        </ProjectReference>
-
-        <None Include="build\CefGlue.Common.props" Pack="True" PackagePath="build\CefGlue.Common$(PackageSuffix).props" />
-        <None Include="build\CefGlue.Common.targets" Pack="True" PackagePath="build\CefGlue.Common$(PackageSuffix).targets" />
-        <None Include="build\CefGlue.Common.props" Pack="True" PackagePath="buildTransitive\CefGlue.Common$(PackageSuffix).props" />
-        <None Include="build\CefGlue.Common.targets" Pack="True" PackagePath="buildTransitive\CefGlue.Common$(PackageSuffix).targets" />
     </ItemGroup>
-
-    <Target DependsOnTargets="ResolveReferences" Name="CopyProjectReferencesToPackage">
-        <ItemGroup>
-            <BuildOutputInPackage Include="@(ReferenceCopyLocalPaths-&gt;WithMetadataValue('ReferenceSourceTarget', 'ProjectReference'))" />
-
-            <TfmSpecificPackageFile Include="..\CefGlue.BrowserProcess\bin\$(Platform)\$(Configuration)\$(DotnetVersion)\win-$(ArchitectureConfig)\publish\**\*">
-                <PackagePath>bin\win-$(ArchitectureConfig)</PackagePath>
-            </TfmSpecificPackageFile>
-            
-            <TfmSpecificPackageFile Include="..\CefGlue.BrowserProcess\bin\$(Platform)\$(Configuration)\$(DotnetVersion)\linux-$(ArchitectureConfig)\publish\**\*">
-                <PackagePath>bin\linux-$(ArchitectureConfig)</PackagePath>
-            </TfmSpecificPackageFile>
-
-            <TfmSpecificPackageFile Include="..\CefGlue.BrowserProcess\bin\$(Platform)\$(Configuration)\$(DotnetVersion)\osx-$(ArchitectureConfig)\publish\**\*">
-                <PackagePath>bin\osx-$(ArchitectureConfig)</PackagePath>
-            </TfmSpecificPackageFile>
-        </ItemGroup>
-    </Target>
-
 </Project>

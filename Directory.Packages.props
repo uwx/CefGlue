@@ -19,7 +19,7 @@
         <PackageVersion Include="Avalonia.Diagnostics" Version="$(AvaloniaVersion)" />
         <PackageVersion Include="Avalonia.ReactiveUI" Version="$(AvaloniaVersion)" />
         <PackageVersion Include="Avalonia.Themes.Simple" Version="$(AvaloniaVersion)" />
-      
+
         <PackageVersion Include="Dotnet.Bundle" Version="0.9.13" />
         <PackageVersion Include="System.Reactive.Linq" Version="6.0.0-preview.9" />
         <PackageVersion Include="System.Text.Json" Version="6.0.1" />
@@ -30,7 +30,7 @@
 
         <PackageVersion Include="RawCef.Binaries.Linux64.Release" Version="$(CefRedistVersion)" />
         <PackageVersion Include="RawCef.Binaries.Linuxarm64.Release" Version="$(CefRedistVersion)" />
-        
+
         <PackageVersion Include="RawCef.Binaries.Macosx64.Release" Version="$(CefRedistVersion)" />
         <PackageVersion Include="RawCef.Binaries.Macosarm64.Release" Version="$(CefRedistVersion)" />
 
