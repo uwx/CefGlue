@@ -130,7 +130,7 @@ namespace Xilium.CefGlue.BrowserProcess.Handlers
             HandleException(exception, frame);
         }
 
-        private void WithErrorHandling(Action action, CefFrame frame)
+        internal void WithErrorHandling(Action action, CefFrame frame)
         {
             try
             {
