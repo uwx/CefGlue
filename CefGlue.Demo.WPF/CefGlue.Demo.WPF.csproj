@@ -30,8 +30,6 @@
         <EmbeddedResource Include="MainWindow.xaml" />
     </ItemGroup>
 
-    <Import Project="$(ProjectDir)..\CefGlue.CopyLocal.props" />
-
     <ItemGroup>
         <ProjectReference Include="..\CefGlue.WPF\CefGlue.WPF.csproj" />
         <ProjectReference Include="..\CefGlue\CefGlue.csproj" />
