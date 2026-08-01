@@ -236,11 +236,12 @@
         /// <summary>
         /// Controls whether databases can be used. Also configurable using the
         /// "disable-databases" command-line switch.
+        /// Deprecated since API 13800.
         /// </summary>
         public CefState Databases
         {
-            get { return _self->databases; }
-            set { _self->databases = value; }
+            get { return _self->databases_deprecated; }
+            set { _self->databases_deprecated = value; }
         }
 
         /// <summary>

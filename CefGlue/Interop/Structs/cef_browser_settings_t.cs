@@ -36,12 +36,13 @@ namespace Xilium.CefGlue.Interop
         public CefState text_area_resize;
         public CefState tab_to_links;
         public CefState local_storage;
-        public CefState databases;
+        public CefState databases_deprecated;
         public CefState webgl;
 
         public uint background_color;
         public CefState chrome_status_bubble;
         public CefState chrome_zoom_bubble;
+        public CefState ax_viewport_collapse;
 
         #region Alloc & Free
         private static readonly int _sizeof;
