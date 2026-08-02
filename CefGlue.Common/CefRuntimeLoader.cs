@@ -37,12 +37,12 @@ namespace Xilium.CefGlue.Common
             if (subProcessPath == null)
                 throw new FileNotFoundException($"Unable to find SubProcess. Probed locations: {string.Join(Environment.NewLine, probingPaths)}");
 
-            settings.BrowserSubprocessPath = subProcessPath;
+            settings.BrowserSubprocessPath ??= subProcessPath;
 
             switch (CefRuntime.Platform)
             {
                 case CefRuntimePlatform.Windows:
-                    settings.MultiThreadedMessageLoop = true;
+                    // settings.MultiThreadedMessageLoop = true;
                     break;
 
                 case CefRuntimePlatform.MacOS:
